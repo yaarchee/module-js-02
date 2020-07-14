@@ -1,7 +1,7 @@
 "use strict";
 
 const startTask = document.querySelector(".task5-go");
-let task = ['Latest technology news', 'JavaScript weekly newsletter','Get best sale offers now!','[SPAM] How to earn fast money?' ];
+const task = ['Latest technology news', 'JavaScript weekly newsletter','Get best sale offers now!','[SPAM] How to earn fast money?' ];
 
 
 const checkForSpam = function(str) {
@@ -28,9 +28,9 @@ const checkForSpam = function(str) {
 
 
 function checkEmptyProm (message){
-  let userData=prompt(`Проверяем наличие подстрок ${"spam"} и  ${"sale"}, в строке:`, message);
+  const userData=prompt(`Проверяем наличие подстрок ${"spam"} и  ${"sale"}, в строке:`, message);
   if(userData==null) {
-    alert("Отменено")
+    alert('Отменено');
   }else{
     checkForSpam(userData);
   }
@@ -39,7 +39,7 @@ function checkEmptyProm (message){
 
 
 
-startTask.addEventListener("click", function () {
+startTask.addEventListener('click', ()=> {
  for(let message of task){
    checkEmptyProm(message);
  }

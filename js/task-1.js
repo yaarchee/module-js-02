@@ -1,6 +1,6 @@
 "use strict";
 
-const startTask = document.querySelector(".task1-go");
+const startTask = document.querySelector('.task1-go');
 
 
 
@@ -18,7 +18,7 @@ const logItems = function(array) {
   alert(answer);
   answer = [];
 };
-startTask.addEventListener("click", function () {
+startTask.addEventListener('click', ()=> {
   logItems(['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong']);
 
   logItems([5, 10, 15, 20, 25, 30, 35, 40, 45, 50]);
