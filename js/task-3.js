@@ -1,12 +1,12 @@
 "use strict";
 
-const startTask = document.querySelector(".task3-go");
-const result = document.querySelector(".task3 .result");
+const startTask = document.querySelector('.task3-go');
+const result = document.querySelector('.task3 .result');
 
 
 const findLongestWord = function(string) {
-  let arr = string.split(" ");
-  let answerArr= [];
+  const arr = string.split(" ");
+  const answerArr= [];
   function compareWords(a, b) {
     if (a.length < b.length ) return 1;
     if (a.length  == b.length ) return 0;
@@ -24,14 +24,14 @@ const findLongestWord = function(string) {
     }
   }
 
-  result.innerHTML = "Самые длинные слова это: "+answerArr.join(" ") ;
+  result.innerHTML = `Самые длинные слова это: ${answerArr.join(' ')}` ;
 
 };
 
-startTask.addEventListener("click",function () {
-   let userData=prompt("введите слова через проблел");
+startTask.addEventListener('click',()=> {
+   const userData=prompt('введите слова через проблел');
    if(userData==null) {
-     alert("Отменено")
+     alert('Отменено')
    }else{
      findLongestWord(userData);
    }

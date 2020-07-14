@@ -1,6 +1,6 @@
 "use strict";
 
-const startTask = document.querySelector(".task7-go");
+const startTask = document.querySelector('.task7-go');
 
 
 
@@ -38,7 +38,7 @@ const addLogin = function(allLogins, login) {
  }
 };
 
-startTask.addEventListener("click", function () {
-  let inputData = prompt("Введите ваш логин");
+startTask.addEventListener("click", ()=> {
+  let inputData = prompt('Введите ваш логин');
   addLogin(logins, inputData);
 });

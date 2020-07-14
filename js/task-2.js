@@ -1,11 +1,11 @@
 "use strict";
 
-const startTask = document.querySelector(".task2-go");
+const startTask = document.querySelector('.task2-go');
 
 
-let answer = [];
+const answer = [];
 const calculateEngravingPrice = function(message, pricePerWord) {
-  let arr = message.split(" ");
+  const arr = message.split(' ');
   answer.push(`Стоимость гравировки для = ${message}, при стоимости за слово ${pricePerWord}, составляет ${pricePerWord*(arr.length)}`) ;
 };
 
@@ -38,7 +38,7 @@ const calculateEngravingPrice = function(message, pricePerWord) {
 
 
 
-startTask.addEventListener("click",function () {
+startTask.addEventListener('click',()=> {
   alert(answer);
   console.log(answer);
 
